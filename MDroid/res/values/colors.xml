@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+            
+    <color name="main_bg">#f2f2f2</color><!-- 全局背景颜色  #fff6f7ec f4f4f4-->
+    
+    <color name="text_color_gray">#ffb2b2b2</color>
+    <color name="text_common_color">#a6a7a9</color>
+    <color name="gray_dark">#ff8f8a85</color>
+    <color name="gray_light">#ffd0cecb</color>
+    
+    
+    
+     
+     
+     
+     
+     
+</resources>

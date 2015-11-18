@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_radius_whilte"    
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/dialog_title"
+        style="@style/txtStyle"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="@dimen/text_size_large" />
+    
+    <TextView
+        android:id="@+id/dialog_content"
+        style="@style/txtStyle"
+    	android:layout_width="match_parent"
+    	android:gravity="center"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:textColor="@android:color/background_dark" 
+        android:textSize="@dimen/text_size_larger"/>
+    
+    <View
+	    android:layout_width="match_parent"
+		android:layout_height="1px"
+		android:background="@color/gray_light"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+       
+        <Button
+            android:id="@+id/positiveButton"
+            style="@style/btnStyle"
+            android:layout_weight="1" 
+            android:textColor="#0b9af4"/>
+        
+        <View 
+		    android:layout_width="1px"
+			android:layout_height="match_parent"
+			android:background="@color/gray_light"/>
+        <Button
+            android:id="@+id/negativeButton"
+            style="@style/btnStyle"
+            android:layout_weight="1"
+            android:textColor="#0b9af4"/>
+      
+    </LinearLayout>
+    
+   
+
+</LinearLayout>
+
