@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ 	 android:layout_width="match_parent"  
+ 	 android:layout_height="match_parent"
+ 	 android:orientation="vertical" >
+    
+    <android.support.v4.widget.SwipeRefreshLayout
+	     android:id="@+id/swipe_layout"  
+	 	 android:layout_width="match_parent"  
+	 	 android:layout_height="match_parent"
+	 	 android:orientation="vertical" >	    
+		 	
+	     <com.muzhi.mdroid.widget.refresh.XMultiColumnListView
+	          xmlns:pla="http://schemas.android.com/apk/res-auto"
+	       	  android:id="@+id/list"
+		      android:scrollbars="vertical"
+		      android:fastScrollEnabled="true"
+		      android:layout_width="match_parent"
+		      android:layout_height="match_parent"
+		      android:background="@android:color/white" 
+		      android:layout_margin="2dp"
+		      pla:plaColumnNumber="2"
+		      pla:plaLandscapeColumnNumber="3"/>
+	     	     
+	</android.support.v4.widget.SwipeRefreshLayout>
+    
+    
+    <com.muzhi.mdroid.widget.fab.FloatingActionsMenuHidable
+		xmlns:fab="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/multiple_actions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        fab:fab_addButtonColorNormal="#25cfe3"
+        fab:fab_addButtonColorPressed="#0bd4ec"
+        fab:fab_addButtonPlusIconColor="#000000"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_weight="1">
+
+        <com.muzhi.mdroid.widget.fab.FloatingActionButton
+            android:id="@+id/action_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             fab:fab_icon="@drawable/ic_fab_star"
+            fab:fab_colorNormal="#fa15dc"
+            fab:fab_colorPressed="#fa15dc"/>
+
+        <com.muzhi.mdroid.widget.fab.FloatingActionButton
+            android:id="@+id/action_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_icon="@drawable/ic_fab_star"
+            fab:fab_colorNormal="#e5da28"
+            fab:fab_colorPressed="#e5da28"/>
+
+    </com.muzhi.mdroid.widget.fab.FloatingActionsMenuHidable>
+    
+    
+</RelativeLayout>
+
+

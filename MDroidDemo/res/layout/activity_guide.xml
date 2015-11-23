@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:gravity="center">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.muzhi.mdroid.views.CirclePageIndicator
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/circlepageIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        app:fillColor="@color/page_indicator_selected"
+        app:pageColor="@color/page_indicator"
+        app:radius="4.0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dip" />
+    
+
+    <Button 
+        android:id="@+id/btn_login"
+        style="@style/btnStyle" 
+        android:text="立即体验" 
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dip"
+        android:layout_centerInParent="true"
+        android:background="#fc4e7b"
+        android:textColor="#ffffff"
+        android:padding="10dip"
+        android:visibility="gone"/>
+    
+    
+</RelativeLayout>
+   
